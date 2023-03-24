@@ -1,6 +1,7 @@
 nb = int(input("Please type in a number: "))
-lst = [i for i in range(1, nb + 1)]
-# print(lst[0][0])
-print(lst)
-# fazer swap 2 a 2
-# imprimir
+lst = [i + 1 for i in range(nb)]
+for i in range(0, len(lst), 2):
+    if (i + 1) < len(lst):
+        lst[i], lst[i + 1] = lst[i + 1], lst[i]
+for n in lst:
+    print(n)
