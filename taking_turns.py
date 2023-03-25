@@ -1,7 +1,7 @@
-# nb = int(input("Please type in a number: "))
-nb = 6 # remove
-i = 1
-while i <= nb / 2:
-    print(i)
-    print(nb - i + 1)
-    i += 1
+nb = int(input("Please type in a number: "))
+lst = [i + 1 for i in range(nb)]
+while bool(lst):
+    if bool(lst):
+        print(lst.pop(0))
+    if bool(lst):
+        print(lst.pop())
